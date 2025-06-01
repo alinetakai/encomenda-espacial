@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Encomenda Espacial - NAVE 404</title>
+  <link rel="shortcut icon" href="nave-favicon.png" type="image/png">
+  <style>
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      text-align: center;
+      padding: 50px;
+    }
+
+    form {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    input, button {
+      margin: 10px;
+      padding: 12px;
+      width: 90%;
+      border-radius: 10px;
+      border: none;
+      font-size: 1em;
+    }
+
+    input[type="submit"],
+    button[type="button"] {
+      background-color: #00e5ff;
+      color: #000;
+      transition: 0.3s;
+    }
+
+    button[type="reset"] {
+      background-color: #ff1744;
+      color: white;
+    }
+
+    input[type="submit"]:hover,
+    button:hover {
+      cursor: pointer;
+      opacity: 0.85;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🛰️ Encomenda Espacial - NAVE 404</h1>
+  <p>Preencha o formulário para enviar uma encomenda interplanetária!</p>
+
+  <form onsubmit="alert('🚀 Encomenda enviada para o espaço sideral!'); return false;">
+    <input type="text" name="planeta" placeholder="Nome do planeta" required><br>
+    <input type="text" name="item" placeholder="Item da encomenda" required><br>
+
+    <input type="submit" value="📦 Enviar Encomenda"><br>
+
+    <button type="button" onclick="alert('👽 Dica: não envie pizza para Marte... eles preferem tacos! 🌮')">
+      💡 Ver Dica Galáctica
+    </button><br>
+
+    <button type="reset">❌ Cancelar Missão</button>
+  </form>
+
+</body>
+</html>
